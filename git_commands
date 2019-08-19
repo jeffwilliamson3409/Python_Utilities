@@ -27,3 +27,6 @@ git branch -d branchName
 
 # delete remote branch
 git push origin --delete <branch_name>
+
+# clone a repository
+$ git clone https://[PROJECT_PATH].git
