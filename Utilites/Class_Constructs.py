@@ -19,8 +19,15 @@ class AlfaDog(object):
     ''' Custom constructor for date from string '''
     @classmethod
     def date_from_str(cls, file_path, date_str):
-        ''' pass date_str arg as "yyyy-mm-dd" '''
-        y,m,d = map(int, date_str.split('-'))
+        ''' pass date_str arg as 'yyyy-mm-dd' or 'yyyy/mm/dd' '''
+        try:
+            y,m,d = map(int, date_str.split('-'))
+        except:
+            print('no dash')
+        try:
+            y,m,d = map(int, date_str.split('//'))
+        except:
+            print('no slash')
         return cls(file_path, y, m, d)
 
     def __iter__(self):
@@ -46,8 +53,11 @@ if __name__ == '__main__':
 
     c = AlfaDog(sys.argv[1], 2019, 10, 2)
     d = AlfaDog.date_from_str(sys.argv[1], '2019-10-02')
+    e = AlfaDog.date_from_str(sys.argv[1], '2019//10//02')
 
     print('******** c *********')
-    print(dir(c))
+    print(c.d_d, c.d_m, c.d_y)
     print('******** d *********')
-    print(dir(d))
+    print(d.d_d, d.d_m, d.d_y)
+    print('******** e *********')
+    print(e.d_d, e.d_m, e.d_y)
