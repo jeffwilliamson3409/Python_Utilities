@@ -19,6 +19,12 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Samples\process_arx2_VA_Stat.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Utilites\Class_Constructs.py" />
     <Compile Include="Utilites\Decorators.py" />
     <Compile Include="Utilites\Generators.py" />
@@ -29,6 +35,7 @@
     <Compile Include="Utilites\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Samples\" />
     <Folder Include="Utilites" />
   </ItemGroup>
   <ItemGroup>
