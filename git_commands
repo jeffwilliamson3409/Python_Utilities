@@ -1,0 +1,29 @@
+# initialize local git repository
+git init
+
+# add remote repository on top of local
+git remote add origin https://[PROJECT_PATH].git
+
+# stage local files for commit
+git add *
+
+# commit files to local repository
+git commit -m "message"
+
+# create branch
+git branch branchName
+
+# checkout branch
+git checkout branchName
+
+# git push to remote
+git push -u origin branchName
+
+# merge branch
+git merge branchName
+
+# delete local branch
+git branch -d branchName
+
+# delete remote branch
+git push origin --delete <branch_name>
