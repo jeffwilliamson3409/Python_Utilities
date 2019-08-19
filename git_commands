@@ -30,3 +30,6 @@ git push origin --delete <branch_name>
 
 # clone a repository
 $ git clone https://[PROJECT_PATH].git
+
+# list files in project
+git ls-files
