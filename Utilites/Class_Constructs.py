@@ -48,6 +48,6 @@ if __name__ == '__main__':
     d = AlfaDog.date_from_str(sys.argv[1], '2019-10-02')
 
     print('******** c *********')
-    print(c)
+    print(dir(c))
     print('******** d *********')
-    print(d)
+    print(dir(d))
