@@ -28,6 +28,7 @@
     <Compile Include="Utilites\Class_Constructs.py" />
     <Compile Include="Utilites\Decorators.py" />
     <Compile Include="Utilites\Generators.py" />
+    <Compile Include="Utilites\logging_module.py" />
     <Compile Include="Utilites\Pandas.py">
       <SubType>Code</SubType>
     </Compile>
@@ -35,6 +36,9 @@
     <Compile Include="Utilites\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="logs_dev\" />
+    <Folder Include="logs_model\" />
+    <Folder Include="logs_prod\" />
     <Folder Include="Samples\" />
     <Folder Include="Utilites" />
   </ItemGroup>
