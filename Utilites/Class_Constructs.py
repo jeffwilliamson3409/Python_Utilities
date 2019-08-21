@@ -15,7 +15,7 @@ class AlfaDog(object):
 
      
     def __init__(self, file_path, d_y, d_m, d_d):  
-        exec_log.log.error('Fart!!!')
+        exec_log.log.debug('It worked!!!')
         self.file_path = file_path
         self.d_y = d_y
         self.d_m = d_m
