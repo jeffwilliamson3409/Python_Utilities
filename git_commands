@@ -33,3 +33,22 @@ $ git clone https://[PROJECT_PATH].git
 
 # list files in project
 git ls-files
+
+***********************************************************************************************************************
+Keep branch in syc with master(BSIG-development)
+
+git checkout BSIG-development
+git pull
+git checkout jwilliamson-dev
+git merge BSIG-development
+to keep jwilliamson-dev in sync with BSIG-development
+
+then when you're ready to put jwilliamson-dev into BSIG-development, first merge in BSIG-development like above, then ...
+
+git checkout BSIG-development
+git merge jwilliamson-dev
+git push -u origin BSIG-development
+and thats it.
+
+the assumption here is that jwilliamson-dev is a topic branch with work that isn't ready to go into your main branch yet. So only merge into BSIG-development when jwilliamson-dev is in a good place
+***********************************************************************************************************************
