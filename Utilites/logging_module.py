@@ -23,13 +23,13 @@ class BSIG_logger(object):
                  log_file_name = 'output', 
                  get_logger_name='BSIG_logger',                       
                  file_handler_format_string='%(asctime)s - %(name)s - %(levelname)s - %(message)s' 
-                 ):   
-        logging.root.setLevel(logging.INFO)
+                 ):
+        logging.root.setLevel(logging.DEBUG)
         self.get_logger_name = get_logger_name
         self.file_handler_format_string = file_handler_format_string
         self.log_file_name = BSIG_logger.log_file_path + log_file_name + '.log'
         self.file_handler = logging.FileHandler(self.log_file_name, mode="w")
-        self.file_handler.setLevel(logging.INFO)
+        self.file_handler.setLevel(logging.DEBUG)
         self.file_handler.setFormatter(logging.Formatter(self.file_handler_format_string))
         self.log = logging.getLogger(self.get_logger_name)
         self.log.addHandler(self.file_handler)
