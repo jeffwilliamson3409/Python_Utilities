@@ -1,6 +1,6 @@
 class Singleton:
 
-    # Class property that stores instance state to insure  that the class is a singleton
+    # Class property that stores instance state to insure that the class is a singleton
     __instance = None
 
     def __init__(self, x):
