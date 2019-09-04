@@ -52,3 +52,7 @@ and thats it.
 
 the assumption here is that jwilliamson-dev is a topic branch with work that isn't ready to go into your main branch yet. So only merge into BSIG-development when jwilliamson-dev is in a good place
 ***********************************************************************************************************************
+
+# keep working branch in sync with main branch
+git checkout TTFAR-814
+git pull origin BSIG-development
